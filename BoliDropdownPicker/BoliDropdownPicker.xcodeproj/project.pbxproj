@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		939176D01E64E5160090C8BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939176CF1E64E5160090C8BF /* AppDelegate.swift */; };
+		939176D21E64E5160090C8BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939176D11E64E5160090C8BF /* ViewController.swift */; };
+		939176D51E64E5160090C8BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939176D31E64E5160090C8BF /* Main.storyboard */; };
+		939176D71E64E5160090C8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939176D61E64E5160090C8BF /* Assets.xcassets */; };
+		939176DA1E64E5160090C8BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939176D81E64E5160090C8BF /* LaunchScreen.storyboard */; };
+		939176E51E64E5160090C8BF /* BoliDropdownPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939176E41E64E5160090C8BF /* BoliDropdownPickerTests.swift */; };
+		939176F01E64E5160090C8BF /* BoliDropdownPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939176EF1E64E5160090C8BF /* BoliDropdownPickerUITests.swift */; };
+		939176FF1E64E53F0090C8BF /* BoliDropdownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939176FE1E64E53F0090C8BF /* BoliDropdownPicker.swift */; };
+		939177001E64E53F0090C8BF /* BoliDropdownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939176FE1E64E53F0090C8BF /* BoliDropdownPicker.swift */; };
+		939177011E64E53F0090C8BF /* BoliDropdownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939176FE1E64E53F0090C8BF /* BoliDropdownPicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		939176E11E64E5160090C8BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 939176C41E64E5160090C8BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 939176CB1E64E5160090C8BF;
+			remoteInfo = BoliDropdownPicker;
+		};
+		939176EC1E64E5160090C8BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 939176C41E64E5160090C8BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 939176CB1E64E5160090C8BF;
+			remoteInfo = BoliDropdownPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		939176CC1E64E5160090C8BF /* BoliDropdownPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoliDropdownPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		939176CF1E64E5160090C8BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		939176D11E64E5160090C8BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		939176D41E64E5160090C8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		939176D61E64E5160090C8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		939176D91E64E5160090C8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		939176DB1E64E5160090C8BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939176E01E64E5160090C8BF /* BoliDropdownPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoliDropdownPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		939176E41E64E5160090C8BF /* BoliDropdownPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoliDropdownPickerTests.swift; sourceTree = "<group>"; };
+		939176E61E64E5160090C8BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939176EB1E64E5160090C8BF /* BoliDropdownPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoliDropdownPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		939176EF1E64E5160090C8BF /* BoliDropdownPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoliDropdownPickerUITests.swift; sourceTree = "<group>"; };
+		939176F11E64E5160090C8BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939176FE1E64E53F0090C8BF /* BoliDropdownPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoliDropdownPicker.swift; path = Source/BoliDropdownPicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		939176C91E64E5160090C8BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939176DD1E64E5160090C8BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939176E81E64E5160090C8BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		939176C31E64E5160090C8BF = {
+			isa = PBXGroup;
+			children = (
+				939176CE1E64E5160090C8BF /* BoliDropdownPicker */,
+				939176E31E64E5160090C8BF /* BoliDropdownPickerTests */,
+				939176EE1E64E5160090C8BF /* BoliDropdownPickerUITests */,
+				939176CD1E64E5160090C8BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		939176CD1E64E5160090C8BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				939176CC1E64E5160090C8BF /* BoliDropdownPicker.app */,
+				939176E01E64E5160090C8BF /* BoliDropdownPickerTests.xctest */,
+				939176EB1E64E5160090C8BF /* BoliDropdownPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		939176CE1E64E5160090C8BF /* BoliDropdownPicker */ = {
+			isa = PBXGroup;
+			children = (
+				939176FD1E64E5210090C8BF /* Source */,
+				939176CF1E64E5160090C8BF /* AppDelegate.swift */,
+				939176D11E64E5160090C8BF /* ViewController.swift */,
+				939176D31E64E5160090C8BF /* Main.storyboard */,
+				939176D61E64E5160090C8BF /* Assets.xcassets */,
+				939176D81E64E5160090C8BF /* LaunchScreen.storyboard */,
+				939176DB1E64E5160090C8BF /* Info.plist */,
+			);
+			path = BoliDropdownPicker;
+			sourceTree = "<group>";
+		};
+		939176E31E64E5160090C8BF /* BoliDropdownPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				939176E41E64E5160090C8BF /* BoliDropdownPickerTests.swift */,
+				939176E61E64E5160090C8BF /* Info.plist */,
+			);
+			path = BoliDropdownPickerTests;
+			sourceTree = "<group>";
+		};
+		939176EE1E64E5160090C8BF /* BoliDropdownPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				939176EF1E64E5160090C8BF /* BoliDropdownPickerUITests.swift */,
+				939176F11E64E5160090C8BF /* Info.plist */,
+			);
+			path = BoliDropdownPickerUITests;
+			sourceTree = "<group>";
+		};
+		939176FD1E64E5210090C8BF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				939176FE1E64E53F0090C8BF /* BoliDropdownPicker.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		939176CB1E64E5160090C8BF /* BoliDropdownPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 939176F41E64E5160090C8BF /* Build configuration list for PBXNativeTarget "BoliDropdownPicker" */;
+			buildPhases = (
+				939176C81E64E5160090C8BF /* Sources */,
+				939176C91E64E5160090C8BF /* Frameworks */,
+				939176CA1E64E5160090C8BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoliDropdownPicker;
+			productName = BoliDropdownPicker;
+			productReference = 939176CC1E64E5160090C8BF /* BoliDropdownPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		939176DF1E64E5160090C8BF /* BoliDropdownPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 939176F71E64E5160090C8BF /* Build configuration list for PBXNativeTarget "BoliDropdownPickerTests" */;
+			buildPhases = (
+				939176DC1E64E5160090C8BF /* Sources */,
+				939176DD1E64E5160090C8BF /* Frameworks */,
+				939176DE1E64E5160090C8BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				939176E21E64E5160090C8BF /* PBXTargetDependency */,
+			);
+			name = BoliDropdownPickerTests;
+			productName = BoliDropdownPickerTests;
+			productReference = 939176E01E64E5160090C8BF /* BoliDropdownPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		939176EA1E64E5160090C8BF /* BoliDropdownPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 939176FA1E64E5160090C8BF /* Build configuration list for PBXNativeTarget "BoliDropdownPickerUITests" */;
+			buildPhases = (
+				939176E71E64E5160090C8BF /* Sources */,
+				939176E81E64E5160090C8BF /* Frameworks */,
+				939176E91E64E5160090C8BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				939176ED1E64E5160090C8BF /* PBXTargetDependency */,
+			);
+			name = BoliDropdownPickerUITests;
+			productName = BoliDropdownPickerUITests;
+			productReference = 939176EB1E64E5160090C8BF /* BoliDropdownPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		939176C41E64E5160090C8BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Bolivarbryan;
+				TargetAttributes = {
+					939176CB1E64E5160090C8BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K87XPR878Y;
+						ProvisioningStyle = Automatic;
+					};
+					939176DF1E64E5160090C8BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K87XPR878Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 939176CB1E64E5160090C8BF;
+					};
+					939176EA1E64E5160090C8BF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K87XPR878Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 939176CB1E64E5160090C8BF;
+					};
+				};
+			};
+			buildConfigurationList = 939176C71E64E5160090C8BF /* Build configuration list for PBXProject "BoliDropdownPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 939176C31E64E5160090C8BF;
+			productRefGroup = 939176CD1E64E5160090C8BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				939176CB1E64E5160090C8BF /* BoliDropdownPicker */,
+				939176DF1E64E5160090C8BF /* BoliDropdownPickerTests */,
+				939176EA1E64E5160090C8BF /* BoliDropdownPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		939176CA1E64E5160090C8BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939176DA1E64E5160090C8BF /* LaunchScreen.storyboard in Resources */,
+				939176D71E64E5160090C8BF /* Assets.xcassets in Resources */,
+				939176D51E64E5160090C8BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939176DE1E64E5160090C8BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939176E91E64E5160090C8BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		939176C81E64E5160090C8BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939176D21E64E5160090C8BF /* ViewController.swift in Sources */,
+				939176FF1E64E53F0090C8BF /* BoliDropdownPicker.swift in Sources */,
+				939176D01E64E5160090C8BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939176DC1E64E5160090C8BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939176E51E64E5160090C8BF /* BoliDropdownPickerTests.swift in Sources */,
+				939177001E64E53F0090C8BF /* BoliDropdownPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939176E71E64E5160090C8BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939176F01E64E5160090C8BF /* BoliDropdownPickerUITests.swift in Sources */,
+				939177011E64E53F0090C8BF /* BoliDropdownPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		939176E21E64E5160090C8BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 939176CB1E64E5160090C8BF /* BoliDropdownPicker */;
+			targetProxy = 939176E11E64E5160090C8BF /* PBXContainerItemProxy */;
+		};
+		939176ED1E64E5160090C8BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 939176CB1E64E5160090C8BF /* BoliDropdownPicker */;
+			targetProxy = 939176EC1E64E5160090C8BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		939176D31E64E5160090C8BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				939176D41E64E5160090C8BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		939176D81E64E5160090C8BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				939176D91E64E5160090C8BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		939176F21E64E5160090C8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		939176F31E64E5160090C8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		939176F51E64E5160090C8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = BoliDropdownPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.BoliDropdownPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		939176F61E64E5160090C8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = BoliDropdownPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.BoliDropdownPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		939176F81E64E5160090C8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = BoliDropdownPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.BoliDropdownPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoliDropdownPicker.app/BoliDropdownPicker";
+			};
+			name = Debug;
+		};
+		939176F91E64E5160090C8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = BoliDropdownPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.BoliDropdownPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoliDropdownPicker.app/BoliDropdownPicker";
+			};
+			name = Release;
+		};
+		939176FB1E64E5160090C8BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = BoliDropdownPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.BoliDropdownPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BoliDropdownPicker;
+			};
+			name = Debug;
+		};
+		939176FC1E64E5160090C8BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = BoliDropdownPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.BoliDropdownPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BoliDropdownPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		939176C71E64E5160090C8BF /* Build configuration list for PBXProject "BoliDropdownPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939176F21E64E5160090C8BF /* Debug */,
+				939176F31E64E5160090C8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		939176F41E64E5160090C8BF /* Build configuration list for PBXNativeTarget "BoliDropdownPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939176F51E64E5160090C8BF /* Debug */,
+				939176F61E64E5160090C8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		939176F71E64E5160090C8BF /* Build configuration list for PBXNativeTarget "BoliDropdownPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939176F81E64E5160090C8BF /* Debug */,
+				939176F91E64E5160090C8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		939176FA1E64E5160090C8BF /* Build configuration list for PBXNativeTarget "BoliDropdownPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939176FB1E64E5160090C8BF /* Debug */,
+				939176FC1E64E5160090C8BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 939176C41E64E5160090C8BF /* Project object */;
+}
