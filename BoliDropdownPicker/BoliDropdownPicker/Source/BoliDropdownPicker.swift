@@ -16,7 +16,7 @@ protocol BoliDropdownPickerDelegate {
 class BoliDropdownPicker: UIView {
     var delegate: BoliDropdownPickerDelegate!
     //expecting an Array of Strings
-    let kMaxTableWidht = 320
+    var defaultHeight:CGFloat = 150
     var minTableWidth:CGFloat = 0
     let kCellIdentifier = "BoliDropdownPickerCell"
     var values: Array<String> = []
@@ -47,30 +47,42 @@ class BoliDropdownPicker: UIView {
         }
         let point = CGPoint(x: x, y: senderView.frame.origin.y + senderView.frame.height)
         
-        super.init(frame: CGRect(origin: point, size: CGSize(width: minTableWidth, height: 150)))
+        super.init(frame: CGRect(origin: point, size: CGSize(width: minTableWidth, height: defaultHeight)))
         self.values = values
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
         let rect = CGRect(x: 0, y: 0, width: minTableWidth, height: 0)
-        let rect2 = CGRect(x: 0, y: 0, width: minTableWidth, height: self.frame.height)
         self.tableView.frame = rect
         self.tableView.layer.borderWidth = 1
         self.tableView.layer.borderColor = UIColor.lightGray.cgColor
-        
         self.addSubview(self.tableView)
-        
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
-            self.tableView.frame = rect2
-        }) { (done) in}
+        open()
+       
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func finishPickup() {
-        
+    public func reloadData() {
+        self.tableView.reloadData()
+    }
+    
+    func open() {
+        let rect2 = CGRect(x: 0, y: 0, width: minTableWidth, height: self.frame.height)
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+            self.tableView.frame = rect2
+        }) { (done) in}
+    }
+    
+    func close() {
+        let rect = CGRect(x: 0, y: 0, width: minTableWidth, height: 0)
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseIn, animations: {
+            self.tableView.frame = rect
+        }) { (done) in
+            self.removeFromSuperview()
+        }
     }
 }
 
@@ -90,18 +102,6 @@ extension BoliDropdownPicker: UITableViewDataSource {
         
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width , height: 30))
-        headerView.backgroundColor = UIColor.green
-        return headerView
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width , height: 30))
-        footerView.backgroundColor = UIColor.green
-        return footerView
-    }
 }
 
 extension BoliDropdownPicker: UITableViewDelegate {
@@ -119,6 +119,7 @@ extension BoliDropdownPicker: UITableViewDelegate {
             
             cellsSelected.insert(indexPath)
         }
+        
         tableView.reloadRows(at: [indexPath], with: .none)
         self.delegate.didSelectItemAtIndex(index: indexPath.row)
 

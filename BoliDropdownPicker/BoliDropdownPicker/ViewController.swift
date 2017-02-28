@@ -11,29 +11,31 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
-    let values = ["A", "B", "C"]
+    let values = ["B", "C", "D", "E", "F"]
+    var dropdownPicker:BoliDropdownPicker!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    
-    @IBAction func showPicker(_ sender: Any) {
-        let dropdownPicker = BoliDropdownPicker(values: values, belowView: sender as! UIButton, customWidth: (sender as! UIButton).frame.width + 10 , customOffset: 10)
-        dropdownPicker.delegate = self
-        self.view.addSubview(dropdownPicker)
+    @IBAction func showPicker(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected {
+            dropdownPicker = BoliDropdownPicker(values: values, belowView: sender, customWidth: (sender).frame.width , customOffset: nil)
+            dropdownPicker.delegate = self
+            self.view.addSubview(dropdownPicker)
+        }else{
+          dropdownPicker.close()
+        }   
     }
-
 }
 
 extension ViewController: BoliDropdownPickerDelegate {
     func didSelectItemAtIndex(index: Int) {
         self.button.setTitle(values[index], for: .normal)
+        self.button.isSelected = false
     }
-
 }
